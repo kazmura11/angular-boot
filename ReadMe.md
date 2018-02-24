@@ -24,10 +24,10 @@ Project demonstrates few of the basic feature of a Angular App which are list be
 
 ## Tools
 
-* Intellij Idea
+* Intellij Idea or Eclipse
 * Microsoft VS Code : with below Plugins
     * Angular Language Service
-    * Angular v4 TypeScript Highlight
+    * Angular v5 TypeScript Highlight
     * ESLint
     * HTML Snippets
     * Node.js Modules Intellisense
@@ -43,5 +43,22 @@ Project demonstrates few of the basic feature of a Angular App which are list be
 ### Live Reload Step-up
 
 1. Start application using spring boot , this also starts a livereload server within JVM.
-2. Excute `npm run build-dev` this will watch for any changes in frontend project and compile them and move to static directory
+2. Excute `npm run build-dev` on src/main/client directory. this will watch for any changes in frontend project and compile them and move to static directory
 3. Enable LiveReload extension in Chrome / FireFox 
+
+### Note
+If you use eclipse, do not run from `Run As` > `Spring Boot App`.
+Right-click,
+`Run As` > `Maven Build`
+`Goal: spring-boot:run`
+And then click `Apply`.
+You should run by `Maven Build`.
+If you run by `Spring Boot App`, and you change the Angular files,
+files will not be compiled and pages will not update.
+
+### Login
+http://localhost:8080/
+
+As Spring Boot's default, and setting on application.properties,
+username: user
+password: password
