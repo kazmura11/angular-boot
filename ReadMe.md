@@ -47,14 +47,11 @@ Project demonstrates few of the basic feature of a Angular App which are list be
 3. Enable LiveReload extension in Chrome / FireFox 
 
 ### Note
-If you use eclipse, do not run from `Run As` > `Spring Boot App`.
-Right-click,
-`Run As` > `Maven Build`
-`Goal: spring-boot:run`
-And then click `Apply`.
-You should run by `Maven Build`.
-If you run by `Spring Boot App`, and you change the Angular files,
-files will not be compiled and pages will not update.
+If you use eclipse and run from `Run As` > `Spring Boot App`,  
+when you change the Angular files, it may be changed and pages will not be updated. In this case, you should `refresh` the entire project files.  
+Even though you do this, the pages will not be updated, you should replace the files manually in the following manner.  
+move `src/main/static` files to `target/classes/static`.  
+Or use the plugin like `FileSync`.
 
 ### Login
 http://localhost:8080/

@@ -7,12 +7,12 @@ import { Hero } from './hero';
 
 @Injectable()
 export class HeroService {
-  private greetingUrl = 'heroes';
+  private heroUrl = '/api/heroes';
 
   constructor(private http: Http) { }
 
   getHeroes(): Promise<Hero[]> {
-    return this.http.get(this.greetingUrl).toPromise()
+    return this.http.get(this.heroUrl).toPromise()
       .then((response) => response.json() as Hero[]).catch(this.handleError);
   }
 
