@@ -6,6 +6,11 @@ target/
 *.iml
 build/
 
+### Eclipse ###
+.classpath
+.project
+.settings/
+
 ### NPM ###
 node/
 **/node_modules/
