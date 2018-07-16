@@ -8,8 +8,6 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeroDetailComponent } from './pages/hero-detail/hero-detail.component';
 import { HeroesComponent } from './pages/heroes/heroes.component';
 
-import { HeroService } from './services/hero.service';
-
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -25,7 +23,6 @@ import { AppRoutingModule } from './app-routing.module';
         HeroDetailComponent,
         HeroesComponent,
     ],
-    providers: [HeroService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
