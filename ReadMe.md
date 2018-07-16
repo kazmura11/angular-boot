@@ -19,7 +19,7 @@ Project demonstrates few of the basic feature of a Angular App which are list be
 * Angular Component
 * Angular FormsModule : for two way binding
 * Angular RouteModule : for routing with in application
-* Angular HttpModule : for communication with backend HTTP service
+* Angular HttpClientModule : for communication with backend HTTP service
 * Angular Service : How to create service for backend communication and dependency Injection of such services
 
 ## Tools
@@ -27,7 +27,7 @@ Project demonstrates few of the basic feature of a Angular App which are list be
 * Intellij Idea or Eclipse
 * Microsoft VS Code : with below Plugins
     * Angular Language Service
-    * Angular v5 TypeScript Highlight
+    * Angular5 TypeScript Highlight
     * ESLint
     * HTML Snippets
     * Node.js Modules Intellisense

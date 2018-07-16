@@ -1,4 +1,4 @@
-package in.arpit.spring.angularboot;
+package team.putinpurin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,10 +13,9 @@ public class AngularBootApplication {
 		SpringApplication.run(AngularBootApplication.class, args);
 	}
 
-	// URLが何か入っているときにブラウザからリロードしたときにエラーにならないようにする対策
-	@RequestMapping(value = "/{path:[^\\.]*}")
+	// if the path is not static page, foward to root!
+	@RequestMapping(value = "/**/{path:[^\\.]*}")
 	public String redirect(@PathVariable String path) {
-		// Forward to home page so that route is preserved.
 		return "forward:/";
 	}
 }

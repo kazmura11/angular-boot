@@ -1,6 +1,4 @@
-package in.arpit.spring.angularboot.domain;
-
-import java.util.stream.IntStream;
+package team.putinpurin.models.entities;
 
 public class Hero {
 	int id;
