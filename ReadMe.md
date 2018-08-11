@@ -37,7 +37,13 @@ Project demonstrates few of the basic feature of a Angular App which are list be
     
 ### How to build / run the proect
 
-* build : `mvn clean install`
+Run below commands on the project root.  
+* install : `mvn clean install`  
+```
+$ cd src/main/client
+$ npm run build
+```
+Then move to the project root,  
 * run : `mvn clean spring-boot:run`
 
 ### Live Reload Step-up
