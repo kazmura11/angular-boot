@@ -3,6 +3,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --aot",
+    "clean": "rimraf ../resources/static",
     "build-dev": "ng build --watch=true --output-hashing=none",
     "build": "ng build --aot --prod --output-hashing=none",
     "test": "ng test",
